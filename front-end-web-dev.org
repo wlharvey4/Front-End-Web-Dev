@@ -1,0 +1,134 @@
+# -*- mode: org; fill-column: 79; -*-
+
+#+TITLE: Front-End Web Development
+#+SUBTITLE: {{{VERSION}}} {{{date}}} {{{EDITION}}} --- 
+#+SUBTITLE: The Big Nerd Ranch Guide
+#+AUTHOR: Chris Aquino
+#+SUBAUTHOR: Todd Gandee
+#+CREATOR: WLHarvey4
+#+DATE: <2019-01-12 Sat 11:55>
+#+MACRO: VERSION Version 0.0.1
+
+#+TEXINFO: @insertcopying
+{{{EDITION}}}
+
+{{{CREATOR}}} as {{{VERSION}}} on {{{DATE(%A %B %d %Y %R)}}}
+
+* INTRODUCTION
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+
+  {{{heading(Learning Front-End Web Development)}}}
+
+  {{{subheading(Shift in Perspective)}}}
+
+  Doing front-end web development may require a shift in perspective; it is
+  very different from development for other platforms.  Here are a few things
+  to keep in mind as you are learning:
+
+  #+ATTR_TEXINFO: :indic i
+  - The browser is a platform. ::
+
+       As a front-end developer, *your code wil target the browser* --- a
+       platform available on nearly every phone, tablet, and personal computer
+       in the world.
+
+  - Front-end development runs along a spectrum. ::
+
+       #+cindex: spectrum, front-end development
+       #+cindex: look and feel, front-end development
+       At one end of the spectrum is the *look and feel* of a web page:
+    - rounded corners
+    - shadows
+    - colors
+    - fonts
+    - whitespace
+
+       #+cindex: logic, front-end development
+       and so on.  At the other end of the spectrum is the *logic* that governs
+       the intricate behaviors of that web page:
+    - swapping images in an interactive photo gallery
+    - validating data entered into a form
+    - sending messages across a chat network
+
+      #+cindex: core technologies, front-end development
+      You will need to become proficient with the core technologies all along
+      this spectrum, and you will often need to use multiple technologies in
+      synergy to create a good web application.
+
+    #+cindex: web technologies, open
+  - Web technologies are open. ::
+
+       There is no one company that controls how browsers should work.  That
+       means that front-end developers do not get a yearly SDK release that
+       contains all the changes they will need to deal with for the next twelve
+       months.  The web is a river; it curves, moves quickly, and is rocky in
+       some places---but that is part of its appeal.  The web is the most
+       rapidly evolving platform available.  Adapting to change is the way of
+       life for a front-end developer.
+
+
+  {{{subheading(Purpose and Focus)}}}
+
+  #+cindex: purpose, book's
+  #+cindex: focus, book's
+  This book's purpose is to *teach you how to develop for a browser*.  As you
+  follow this guide, you will be taken through the process of building a series
+  of projects.  Each project will call for a different mixture of technologies
+  along the front-end spectrum.  Because of the sheer number of front-end
+  tools, libraries, and frameworks available, this book will focus on the most
+  essential and portable patterns and techniques.
+
+  {{{heading(Prerequisites)}}}
+  #+cindex: prerequisites, book's
+
+  This book is not an introduction to programming.  It assumes you have
+  experience with the fundamentals of writing code.  You are expected to be
+  familiar with basic types, functions, and objects.
+
+  #+cindex: JavaScript
+  It does not assume you already know JavaScript.  It introduces you to
+  JavaScript concepts in context, as you need them.
+
+** How This Book Is Organized
+
+* CORE BROWSER PROGRAMMING
+
+* MODULES OBJECTS FORMS
+
+* REAL-TIME DATA
+
+* APPLICATION ARCHITECTURE
+
+* AFTERWORD
+* CONCEPT INDEX
+  :PROPERTIES:
+  :INDEX:    t
+  :END:
+
+* COPYING
+  :PROPERTIES:
+  :COPYING:  t
+  :END:
+  {{{TITLE}}} by {{{AUTHOR}}} and {{{SUBAUTHOR}}}
+
+\copy 2016 Big Nerd Ranch LLC
+
+* EXPORT SETUP                                                     :noexport:
+#+TEXINFO_FILENAME:front-end-web-dev.info
+#+TEXINFO_CLASS: info
+#+TEXINFO_HEADER:
+#+TEXINFO_POST_HEADER:
+#+TEXINFO_DIR_CATEGORY: WebDev
+#+TEXINFO_DIR_TITLE:
+#+TEXINFO_DIR_DESC:
+#+TEXINFO_PRINTED_TITLE:Outline of @cite{Front-End Web Development}
+
+* MACRO DEFINITIONS                                                :noexport:
+#+MACRO: EDITION First Edition July 2016
+#+MACRO: SUBAUTHOR Todd Gandee
+#+MACRO: CREATOR Outline Created by WLHarvey4
+#+MACRO: heading @@texinfo:@heading @@$1
+#+MACRO: subheading @@texinfo:@subheading @@$1
+#+MACRO: noindent @@texinfo:@@noindent
