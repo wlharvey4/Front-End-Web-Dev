@@ -6,8 +6,8 @@
 #+AUTHOR: Chris Aquino
 #+SUBAUTHOR: Todd Gandee
 #+CREATOR: WLHarvey4
-#+DATE: <2019-01-12 Sat 11:55>
-#+MACRO: VERSION Version 0.0.1
+#+DATE: <2019-09-24 Sat 11:30>
+#+MACRO: VERSION Version 0.0.2
 
 #+TEXINFO: @insertcopying
 {{{EDITION}}}
@@ -95,6 +95,73 @@
 
 * CORE BROWSER PROGRAMMING
 
+** Development Environment
+#+cindex:development environment
+#+cindex:tools
+#+cindex:Chrome
+#+cindex:Atom
+Three basic tools:
+- browser :: Google Chrome
+- text editor :: Atom by GitHub
+  - https://atom.io
+  - https://github.atom.io
+  - https://github.com/atom
+  - https://github.com/atom/atom
+  - https://github.com/atom/github
+- reference documentation ::
+
+*** Atom Text Editor
+
+**** Atom Plug-ins
+Want:
+- documentation lookup
+- autocompletion
+- code formatting
+- code linting
+
+
+{{{heading(Install Packages Screen)}}}
+#+cindex:install packages
+To get Atom’s =Install Packages= screen, go to Preferences and click =+
+Install=.  Search for plug-in packages by name.  Packages are published to
+~atom.io~ and are installed to ~/Users/pine/.atom/packages~.
+#+cindex:Atom preferences
+#+cindex:Atom settings
+#+cindex:settings, Atom
+: Atom -> Preferences ‘C-,’
+: + Install
+
+{{{subheading(Emmet Plug-in)}}}
+- Install =Emmet= :: the emmet plug-in lets you write well-formatted HTML using
+     a convenient shorthand.
+
+{{{subheading(Atom-Beautify Plug-in)}}}
+- Install =Atom-Beautify= :: helps with the indentation of your code.
+
+{{{subheading(Autocomplete-Paths Plug-in)}}}
+- Install the =autocomplete-paths= plugin :: helps by offering filenames in an
+     autocomplete menu as you type
+
+{{{subheading(API-Docs Plug-in)}}}
+
+- Install =api-docs= plug-in :: lets you look up documentation based on
+     keyword.  It displays the documentation in a separate tab in the editor.
+
+{{{subheading(Linter Plug-in)}}}
+
+- Install the =linter= plug-in :: a /linter/ is a program that checks the
+     syntax and sytle of your code.
+
+- Install the =linter-csslint= plug-in :: ensures that your CSS is
+     syntactically correct and also offers suggestions about writing performant
+     CSS
+
+- Install =linter-htmlhint= :: cofirms that your HTML is well-formed and warns
+     you about mismatched HTML tags.
+
+- Install =linter-eslint= :: checks the syntax of your JavaScript and can be
+     configured to check the style and formatting of your code.
+
 * MODULES OBJECTS FORMS
 
 * REAL-TIME DATA
@@ -132,3 +199,9 @@
 #+MACRO: heading @@texinfo:@heading @@$1
 #+MACRO: subheading @@texinfo:@subheading @@$1
 #+MACRO: noindent @@texinfo:@@noindent
+
+* Local Variables
+# Local Variables:
+# eval: (org-indent-mode 1)
+# eval: (electric-quote-mode 1)
+# End:
